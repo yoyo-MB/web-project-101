@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Simple Recipes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li class="active"><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#recipes">Manage Recipes</a></li>
+                <li><a href="#admins">Manage Admins</a></li>
+                <li><a href="index.html" class="view-site-link">View Site</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </aside>
+
+      
+
+            <section id="dashboard" class="admin-section">
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Total Recipes</h3>
+                        <p>24</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Active Admins</h3>
+                        <p>3</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Visitors This Week</h3>
+                        <p>1,245</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recipes" class="admin-section" style="display: none;">
+                <h2>Manage Recipes</h2>
+                <button class="add-button">Add New Recipe</button>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Recipe Name</th>
+                            <th>Difficulty</th>
+                            <th>Time</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Simple Pasta</td>
+                            <td>Easy</td>
+                            <td>20 min</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Fresh Salad</td>
+                            <td>Easy</td>
+                            <td>15 min</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="admins" class="admin-section" style="display: none;">
+                <h2>Manage Admins</h2>
+                <button class="add-button">Add New Admin</button>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>admin1</td>
+                            <td>admin1@example.com</td>
+                            <td>Super Admin</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
