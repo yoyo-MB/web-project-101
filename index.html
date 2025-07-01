@@ -20,14 +20,23 @@
         </nav>
     </header>
 
-   <section class="hero" id="home">
-    <img src="img/dan-gold-5O1ddenSM4g-unsplash.jpg" alt="Delicious food" class="hero-background">
+ <!-- Update the hero section in index.html -->
+<section class="hero" id="home">
+    <div class="hero-slideshow">
+        <img src="img/dan-gold-5O1ddenSM4g-unsplash.jpg" alt="Delicious food" class="hero-background active">
+        <img src="img/max-griss-cToNEm70cvE-unsplash.jpg" alt="Soup" class="hero-background">
+        <img src="img/mariana-medvedeva-fk6IiypMWss-unsplash.jpg" alt="Salad" class="hero-background">
+    </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1>Delicious Recipes Made Simple</h1>
         <p>Discover easy-to-follow recipes for every occasion</p>
-        <button class="cta-button">Browse Recipes</button>
+        <div class="search-bar">
+            <input type="text" placeholder="Search recipes...">
+            <button class="cta-button">Search</button>
+        </div>
     </div>
+</section>
 </section>
     <section class="featured-recipes" id="recipes">
         <h2>Featured Recipes</h2>
