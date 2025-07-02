@@ -10,6 +10,10 @@
     <header>
         <nav>
             <div class="logo">Simple Recipes</div>
+            <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search recipes...">
+            <button id="searchButton">Search</button>
+        </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#recipes">Recipes</a></li>
@@ -24,60 +28,143 @@
 <section class="hero" id="home">
     <div class="hero-slideshow">
         <img src="img/dan-gold-5O1ddenSM4g-unsplash.jpg" alt="Delicious food" class="hero-background active">
-        <img src="img/max-griss-cToNEm70cvE-unsplash.jpg" alt="Soup" class="hero-background">
-        <img src="img/mariana-medvedeva-fk6IiypMWss-unsplash.jpg" alt="Salad" class="hero-background">
+        <img src="img\rob-wicks-mvI8LEshy6U-unsplash.jpg" alt="Delicious food" class="hero-background">
+        <img src="img/jonathan-borba-uB7q7aipU2o-unsplash.jpg" alt="Delicious food" class="hero-background">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1>Delicious Recipes Made Simple</h1>
         <p>Discover easy-to-follow recipes for every occasion</p>
-        <div class="search-bar">
-            <input type="text" placeholder="Search recipes...">
-            <button class="cta-button">Search</button>
-        </div>
     </div>
 </section>
 </section>
     <section class="featured-recipes" id="recipes">
         <h2>Featured Recipes</h2>
-        <div class="recipe-grid">
-            <div class="recipe-card">
-                <img src="img\nicholas-grande-d9jcPTRD9fo-unsplash.jpg" alt="Pasta">
-                <h3>Simple Pasta</h3>
-                <p>20 min | Easy</p>
-            </div>
-            <div class="recipe-card">
-                <img src="img\mariana-medvedeva-fk6IiypMWss-unsplash.jpg" alt="Salad">
-                <h3>Fresh Salad</h3>
-                <p>15 min | Easy</p>
-            </div>
-            <div class="recipe-card">
-                <img src="img/max-griss-cToNEm70cvE-unsplash.jpg" alt="Soup">
-                <h3>Hearty Soup</h3>
-                <p>30 min | Medium</p>
-            </div>
+        <div class="recipe-card">
+    <img src="img\nicholas-grande-d9jcPTRD9fo-unsplash.jpg" alt="Pasta" >
+    <div class="recipe-info">
+        <h3>Simple Pasta</h3>
+        <div class="recipe-meta">
+            <span class="recipe-time">20 min</span>
+            <span class="recipe-difficulty">Easy</span>
         </div>
+        <div class="expand-toggle">+</div>
+        <div class="recipe-details">
+            <div class="recipe-rating">
+                ★★★★☆ <span class="rating-count">(24)</span>
+            </div>
+            <p class="recipe-description">A quick and delicious pasta dish perfect for weeknights.</p>
+           <button class="save-recipe">♡ Save</button>
+        </div>
+        <div class="recipe-ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>200g pasta</li>
+                <li>2 cloves garlic</li>
+                <li>2 tbsp olive oil</li>
+                <li>1/2 tsp chili flakes</li>
+                <li>Salt to taste</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="recipe-card">
+    <img src="img\mariana-medvedeva-fk6IiypMWss-unsplash.jpg" alt="Salad" >
+    <div class="recipe-info">
+        <h3>Fresh Salad</h3>
+        <div class="recipe-meta">
+            <span class="recipe-time">12 min</span>
+            <span class="recipe-difficulty">Easy</span>
+        </div>
+        <div class="expand-toggle">+</div>
+        <div class="recipe-details">
+            <div class="recipe-rating">
+                ★★★☆☆ <span class="rating-count">(22)</span>
+            </div>
+            <p class="recipe-description">A quick and fresh Salad dish perfect for summer days.</p>
+            <button class="save-recipe">♡ Save</button>
+        </div>
+        <div class="recipe-ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>2 cups mixed salad greens</li>
+                <li>½ avocado, diced</li>
+                <li>¾ cup veggies of your choice</li>
+                <li>2 teaspoons extra-virgin olive oil</li>
+                <li>¼ teaspoon kosher salt </li>
+            </ul>
+        </div>
+    </div>
+</div>
+          
+<div class="recipe-card">
+    <img src="img\max-griss-cToNEm70cvE-unsplash.jpg" alt="Soup" >
+    <div class="recipe-info">
+        <h3>Delicious Soup</h3>
+        <div class="recipe-meta">
+            <span class="recipe-time">30 min</span>
+            <span class="recipe-difficulty">Medium</span>
+        </div>
+        <div class="expand-toggle">+</div>
+        <div class="recipe-details">
+            <div class="recipe-rating">
+                ★★★★★ <span class="rating-count">(30)</span>
+            </div>
+            <p class="recipe-description">quick and simple soup.</p>
+            <button class="save-recipe">♡ Save</button>
+        </div>
+        <div class="recipe-ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>1 head garlic</li>
+                <li>1 yellow onion</li>
+                <li>1 cup vegetable stock or chicken stock</li>
+                <li>1/2 cup heavy cream or half-and-half</li>
+                <li>salt and freshly ground black pepper to taste </li>
+            </ul>
+        </div>
+    </div>
+</div>
+              
+           
     </section>
 
-    <section class="about" id="about">
-        <h2>About Us</h2>
-        <p>Simple Recipes is dedicated to providing easy-to-follow recipes for home cooks of all skill levels. Our mission is to make cooking enjoyable and accessible to everyone.</p>
-    </section>
+  <!-- Fun About & Contact Section -->
+<section class="about-contact">
+  <div class="about-section">
+    <div class="spice-icons">
+      <span class="spice-icon">🌶️</span>
+      <span class="spice-icon">🧄</span>
+      <span class="spice-icon">🍋</span>
+    </div>
+    <h2>Our Kitchen Story</h2>
+    <div class="about-content">
+      <p>We're a team of food lovers who believe <strong>great cooking doesn't have to be complicated</strong>!</p>
+      <div class="fun-fact">
+        <span class="fact-icon">👩‍🍳</span>
+        <p>Founded in 2025 after burning one too many fried eggs </p>
+      </div>
+      <p>Our mission: <span class="highlight">Making cooking fun and foolproof</span> for everyone, from college students to grandmas!</p>
+    </div>
+  </div>
 
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  
+       <div class="contact-section">
+    <h2>Chat With Us!</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2023 Simple Recipes. All rights reserved.</p>
-    </footer>
-
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2023 Simple Recipes. All rights reserved.</p>
+  </div>
+</footer>
     <script src="js/main.js"></script>
 </body>
 </html>
